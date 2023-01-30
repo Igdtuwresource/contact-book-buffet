@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Contact us form</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+    <div class="container">
+        <div class="text">SELL YOUR BOOK!<br> <p class="tag">#sustainability</p>
+        </div>
+        <form id="contactForm">
+            <div class="alert">Your form is submitted.</div>
+            <div class="inputBox">
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+            </div>
+
+            <div class="inputBox">
+                <label for="emailid">Email</label>
+                <input type="email" id="emailid" required />
+            </div>
+            <div class="inputBox">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" required maxlength="10" />
+            </div>
+            <div class="inputBox">
+                <label for="bookname">Book Name</label>
+                <input type="text" id="bookname" required />
+            </div>
+            <div class="inputBox">
+                <label for="bookprice">Book Price</label>
+                <input type="text" id="bookprice" required placeholder="Rs." />
+            </div>
+            <div class="inputBox">
+                <label for="author">Author</label>
+                <input type="text" id="author" required />
+            </div>
+            <div class="inputBox">
+                <label for="condition">Book's Condition</label>
+                <input type="text" id="condition" required placeholder="New/ Semi-Old/ Old"/>
+            </div>
+            <div class="inputBox">
+               <label for="msgContent">Message</label>
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Explain in detail"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+    
+             
+           
+        </form>
+     </div>
+     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="./mail.js"></script>
+   </body>
+</html>
