@@ -8,6 +8,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Request you to firstly read terms & conditions.</h2>
+        
+        <a href="https://igdtuwresource.github.io/terms/">Click to Read</a>
+    </div>
     <div class="container">
         <div class="text">SELL YOUR BOOK!<br> <p class="tag">#sustainability</p>
         </div>
@@ -27,12 +33,12 @@
                 <input type="text" id="phone" required maxlength="10" />
             </div>
             <div class="inputBox">
-                <label for="bookname">Book Name</label>
+                <label for="bookname">Book/ Notes Name</label>
                 <input type="text" id="bookname" required />
             </div>
             <div class="inputBox">
-                <label for="bookprice">Book Price</label>
-                <input type="text" id="bookprice" required placeholder="Rs." />
+                <label for="bookprice">College</label>
+                <input type="text" id="bookprice" required placeholder="IGDTUW/NSUT/DTU" />
             </div>
             <div class="inputBox">
                 <label for="author">Author</label>
@@ -60,5 +66,18 @@
      
      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
      <script src="./mail.js"></script>
+     <script>
+        window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000
+    )
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+     </script>
    </body>
 </html>
