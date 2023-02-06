@@ -6,20 +6,29 @@
       <title>Contact us form</title>
       <link rel="stylesheet" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        @media screen and (max-width:720px){
+            .popup{
+            width:200px;
+            
+        }
+        }
+        
+        
+      </style>
    </head>
    <body>
     <div class="popup">
         <button id="close">&times;</button>
-        <h2>Request you to firstly read terms & conditions.</h2>
+        <h2> We request you to firstly read terms & conditions.</h2>
         
-        <a href="https://igdtuwresource.github.io/terms/">Click to Read</a>
+        <a href="https://igdtuwresource.github.io/terms/" class="no">Click to Read</a>
     </div>
     <div class="container">
         <div class="text">SELL YOUR BOOK!<br> <p class="tag">#sustainability</p>
         </div>
         <form id="contactForm">
-            <div class="alert">Your form is submitted.</div>
-            <div class="inputBox">
+               <div class="inputBox">
                 <label for="name">Name</label>
                 <input type="text" id="name" required />
             </div>
@@ -56,7 +65,8 @@
             <div class="inputBox">
                 <button type="submit" id="submit">Submit</button>
             </div>
-    
+            <div class="alert">Your form is submitted. Our Team will reach out to you within 24 hrs.</div>
+       
              
            
         </form>
